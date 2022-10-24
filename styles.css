@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+#myBtn {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  border: white;
+  font-weight: 550;
+  cursor: pointer;
+  background-image: linear-gradient(to right,
+  #5c78aa 0%,
+  #51abbf  51%,
+  #489f89  100%);
+  padding: 3px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 3px #9feaf1;
+  border-radius: 8px;
+  }
+
+  #myBtn:hover {
+    background-position: right center;
+    color: rgb(4, 4, 4);
+    text-decoration: none;
+  }
+   
+  .not_visible {
+    display: none;
+  }
+  @media  (max-width: 767px) {
+      .not_visible {
+          display: flex;
+      }                                                                                                                        
+  }
+
+h3 {
+  position:absolute;
+  width: 0;
+  left: 10px;
+  font-size: 13px;
+  border-radius: 5px;
+  background-image: radial-gradient( 
+    circle 489px at 49.3% 46.6%,  
+  rgb(255, 255, 255) 0%, 
+  rgba(255, 255, 255, 0.681) 100.2% );
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  
+}
+@keyframes slidein {
+  from {
+    top: 8px;
+  }
+
+  to {
+    top: 8px;
+    width: 190px;
+  }
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.col h2 {
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.col h2:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+} 
+
+.col button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.col button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
